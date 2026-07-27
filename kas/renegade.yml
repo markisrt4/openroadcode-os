@@ -1,0 +1,18 @@
+header:
+  version: 14
+  includes:
+    - kas/common.yml
+
+machine: roc-rk3328-cc
+
+repos:
+  meta-arm:
+    url: https://git.yoctoproject.org/meta-arm
+    commit: 23b572c40ea6709ab3f8bd7abbb5a795fc3631c2
+    layers:
+      meta-arm-toolchain:
+      meta-arm:
+
+  meta-rockchip:
+    url: https://git.yoctoproject.org/meta-rockchip
+    commit: 9690180b7e9953361958c962b80d891eda8c1028

@@ -1,0 +1,24 @@
+header:
+  version: 14
+
+build_system: openembedded
+distro: openroadcode
+target: openroadcode-image
+
+repos:
+  openroadcode-os:
+    layers:
+      meta-openroadcode:
+
+  poky:
+    url: https://git.yoctoproject.org/poky
+    commit: 9916b7471edd0e9a95d94364398c241d1c3bac33
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+local_conf_header:
+  openroadcode-cache: |
+    DL_DIR ?= "${TOPDIR}/../downloads"
+    SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
