@@ -1,0 +1,20 @@
+# Yocto build output and caches
+build-*/
+downloads/
+sstate-cache/
+
+# Repositories fetched by kas
+poky/
+meta-arm/
+meta-raspberrypi/
+meta-rockchip/
+
+# kas working files
+.config.yaml
+.kas_*
+
+# Editor and operating-system files
+.vscode/
+*.swp
+*~
+.DS_Store
